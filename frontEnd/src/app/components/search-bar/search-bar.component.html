@@ -1,17 +1,18 @@
 <div class="box">
     <div class="group">
-      <div class="overlap" (click)="handleRectangleClick('Nome')">
+      <div class="overlap" (click)="toggleDropdown()">
         <div class="text-wrapper">Pesquisar</div>
       </div>
       <div class="overlap-group">
-        <div class="rectangle" [class.clicked]="isMenuOpen"></div>
-        <img class="vector" src="/assets/arrow.png" [class.rotate]="isMenuOpen" />
-        <div class="div" [class.open]="isMenuOpen">
+        <div class="rectangle" [class.clicked]="isMenuOpen" (click)="toggleDropdown()">
           {{ selectedOption }}
         </div>
-      </div>
-      <div class="overlap-group">
-        <div class="rectangle" (click)="handleRectangleClick('Maquina')"></div>
+        <img class="vector" src="/assets/arrow.png" [class.rotate]="isMenuOpen" />
+        <div class="dropdown" *ngIf="isMenuOpen">
+          <div class="dropdown-item" (click)="handleMenuItemClick('Nome')">Nome</div>
+          <div class="dropdown-item" (click)="handleMenuItemClick('Maquina')">Maquina</div>
+          <!-- Adicione mais itens de menu conforme necessário -->
+        </div>
       </div>
     </div>
   </div>

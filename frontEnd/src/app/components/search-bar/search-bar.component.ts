@@ -7,10 +7,17 @@ import { Component } from '@angular/core';
 })
 export class SearchBarComponent {
   isMenuOpen: boolean = false;
-  selectedOption: string = 'Nome'; // Defina 'Nome' como a opção padrão
+  selectedOption: string = 'Nome';
 
-  handleRectangleClick(option: string): void {
+  toggleDropdown(): void {
     this.isMenuOpen = !this.isMenuOpen;
-    this.selectedOption = this.isMenuOpen ? option : 'Nome'; // Atualiza para 'Nome' quando o menu é fechado
+  }
+
+  handleMenuItemClick(option: string): void {
+    this.selectedOption = option;
+    this.isMenuOpen = false;
+    if(option === 'Nome'){
+      console.log("BAtata")
+    }
   }
 }
