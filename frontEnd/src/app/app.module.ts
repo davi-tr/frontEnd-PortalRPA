@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { CadastroButtonComponent } from './components/cadastro-button/cadastro-button.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { ItensComponent } from './components/itens/itens.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
     CadastroButtonComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ItensComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -55,6 +55,18 @@
     background-color: #d9d9d9;
     border-radius: 12px;
     transition: ease-out 0.2s height;
+    
+  }
+  .rectangle p{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-family: "Istok Web-Regular", Helvetica;
+    font-weight: 400;
+    color: #3e3b3b;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal; 
   }
   
   .rectangle.clicked {
@@ -87,7 +99,12 @@
   }
   
   .dropdown-item {
-    font-family: "Istok Web-Italic", Helvetica;
+    font-family: "Istok Web-Regular", Helvetica;
+    font-weight: 400;
+    color: #3e3b3b;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal; 
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -98,7 +115,7 @@
   }
   
   .selected-option {
-    margin-top: 10px; /* Ajuste conforme necessário */
+    margin-top: 10px; 
     font-family: "Istok Web-Regular", Helvetica;
     font-weight: 400;
     color: #3e3b3b;
