@@ -35,4 +35,7 @@ export class ItensComponent implements OnInit {
     this.isExpanded = !this.isExpanded;
     this.boxHeight = this.isExpanded ? this.expandedHeight : 305; 
   }
+  getBoxClass(id: number): string {
+    return `box-${id}`;
+  }
 }

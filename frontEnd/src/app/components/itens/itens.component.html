@@ -1,14 +1,18 @@
 <!-- itens.component.html -->
-<div class="box" *ngFor="let item of dataList">
-  <div class="rpa">
-    <div class="overlap-group">
-      <div class="rectangle"></div>
-      <div class="div" (click)="handleMenuItemClick()"></div>
-      <div class="text-wrapper">{{ item.nome }}</div>
-      <div class="text-wrapper-2">{{ item.Maquina }}</div>
-      <div class="text-wrapper-3">{{ item.area }}</div>
-      <div class="text-wrapper-4">{{ item.status }}</div>
-      <div class="text-wrapper-5">{{ item.hora | date: 'yyyy-MM-dd HH:mm:ss' }}</div>
+
+<div class="horizontal-container">
+  <div *ngFor="let item of dataList" class="box" [style.height.px]="boxHeight" [class]="getBoxClass(item.id)" (click)="handleMenuItemClick()">
+    <div class="rpa">
+      <div class="overlap-group">
+        <div class="rectangle" [ngClass]="{'status-true': item.status, 'status-false': !item.status}"></div>
+        <div class="div"></div>
+        <div class="text-wrapper">{{ item.nome }}</div>
+        <div class="text-wrapper-2">{{ item.hora | date:'HH:mm' }}</div>
+        <div class="text-wrapper-3">{{ item.Maquina }}</div>
+        <div class="text-wrapper-4">{{ item.hora | date:'dd/MM' }}</div>
+        <div class="text-wrapper-5">Maquina</div>
+        <div class="text-wrapper-6">Ultima Atualização</div>
+      </div>
     </div>
   </div>
 </div>

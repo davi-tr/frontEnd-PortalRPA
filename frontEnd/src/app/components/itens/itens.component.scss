@@ -1,15 +1,25 @@
 
+/* itens.component.scss */
 
-.box {
-    width: 450px;
-    height: 305px;
-    }
+.horizontal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhar os itens no topo do contêiner */
+  }
+  
+  .box {
+    flex: 0 0 calc(48% - 10px); /* Ajustar conforme necessário para o espaçamento e largura desejados */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Incluir a borda e o preenchimento no tamanho total da caixa */
+  }
+  
     .box .rpa {
     display: grid;
-    position: fixed;
+    position: relative;
     width: 462px;
     height: 305px;
-    top: 14rem;
+    top: 10rem;
     left: 30rem;
     }
     .box .overlap-group {
@@ -18,7 +28,7 @@
     height: 305px;
     }
     .box .rectangle {
-    position: absolute;
+    position: relative;
     width: 449px;
     height: 300px;
     top: 0;
@@ -102,3 +112,11 @@
     letter-spacing: 0;
     line-height: normal;
     } 
+
+    .box .rectangle.status-true {
+        background-color: #3aaa35c7; /* Verde para status true */
+      }
+      
+      .box .rectangle.status-false {
+        background-color: #ff0000c7; /* Vermelho para status false */
+      }
