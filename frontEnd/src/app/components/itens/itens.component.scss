@@ -2,18 +2,15 @@
 /* itens.component.scss */
 
 .horizontal-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid ;
+  grid-template-columns: 1fr 1fr !important;
     align-items: flex-start; /* Alinhar os itens no topo do contêiner */
   }
   
   .box {
-    flex: 0 0 calc(48% - 10px); /* Ajustar conforme necessário para o espaçamento e largura desejados */
-    margin-bottom: 10px;
-    box-sizing: border-box; /* Incluir a borda e o preenchimento no tamanho total da caixa */
+    margin-bottom: 55px;
+    box-sizing: border-box; 
   }
-  
     .box .rpa {
     display: grid;
     position: relative;

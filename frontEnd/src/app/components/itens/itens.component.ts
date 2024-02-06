@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '/Users/Davi/OneDrive/portalRPA/frontEnd-PortalRPA/frontEnd/src/app/services/api-rpa.service'
-import { ApiResponse } from 'C:/Users/Davi/OneDrive/portalRPA/frontEnd-PortalRPA/frontEnd/src/app/types/response.interface'
+import { DataService } from '/home/davi/Documents/frontEnd-PortalRPA/frontEnd/src/app/services/api-rpa.service'
+import { ApiResponse } from '/home/davi/Documents/frontEnd-PortalRPA/frontEnd/src/app/types/response.interface'
 
 @Component({
   selector: 'app-itens',
@@ -9,6 +9,7 @@ import { ApiResponse } from 'C:/Users/Davi/OneDrive/portalRPA/frontEnd-PortalRPA
 })
 export class ItensComponent implements OnInit {
   dataList: any[] = [];
+  maquinasDisponiveis: any[] = [];
 
   constructor(private dataService: DataService) {}
 
@@ -31,10 +32,16 @@ export class ItensComponent implements OnInit {
   boxHeight: number = 305; 
   expandedHeight: number = 500; 
 
-  handleMenuItemClick() {
-    this.isExpanded = !this.isExpanded;
-    this.boxHeight = this.isExpanded ? this.expandedHeight : 305; 
+handleMenuItemClick(item: any) { // Adicione um parâmetro 'item'
+  this.isExpanded = !this.isExpanded;
+  this.boxHeight = this.isExpanded ? this.expandedHeight : 305; 
+  if (this.isExpanded) {
+    this.maquinasDisponiveis = item.Maquina;
+  } else {
+    this.maquinasDisponiveis = [];
   }
+}
+
   getBoxClass(id: number): string {
     return `box-${id}`;
   }
