@@ -3,15 +3,21 @@
         <div class="overlap-group">
             <div class="image"><img class="logo-grupo" src="/assets/logo-grupo.png" /></div>
             <div class="overlap">
-                <div class="rectangle" (click)="handleRectangleClick('Canteiro')" [class.clicked]="clickedCategory === 'Canteiro'"></div>
+                <!-- Emitir evento com categoria 'Canteiro' quando clicado -->
+                <div class="rectangle" (click)="handleRectangleClick('Canteiro')"
+                    [class.clicked]="clickedCategory === 'Canteiro'"></div>
                 <div class="text-wrapper">Canteiro</div>
             </div>
             <div class="div">
-                <div class="rectangle" (click)="handleRectangleClick('Contabilidade')" [class.clicked]="clickedCategory === 'Contabilidade'"></div>
+                <!-- Emitir evento com categoria 'Contabilidade' quando clicado -->
+                <div class="rectangle" (click)="handleRectangleClick('Contabilidade')"
+                    [class.clicked]="clickedCategory === 'Contabilidade'"></div>
                 <div class="text-wrapper-2">Contabilidade</div>
             </div>
             <div class="overlap-2">
-                <div class="rectangle" (click)="handleRectangleClick('Fiscal')" [class.clicked]="clickedCategory === 'Fiscal'"></div>
+                <!-- Emitir evento com categoria 'Fiscal' quando clicado -->
+                <div class="rectangle" (click)="handleRectangleClick('Fiscal')"
+                    [class.clicked]="clickedCategory === 'Fiscal'"></div>
                 <div class="text-wrapper-3">Fiscal</div>
             </div>
         </div>

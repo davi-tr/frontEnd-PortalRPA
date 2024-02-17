@@ -16,6 +16,7 @@ export class SideBarComponent {
       // Caso contrário, atualize a categoria clicada
       this.clickedCategory = category;
     }
+    console.log(this.clickedCategory)
 
     // Adicione aqui o código que você deseja executar quando o retângulo for clicado
   }

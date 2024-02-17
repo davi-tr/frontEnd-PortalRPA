@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontEnd';
+  showItems = false;
+  clickedCategory: string | null = null;
+
+  loadItems(category: string): void {
+  
+    this.clickedCategory = category;
+    
+    this.showItems = true;
+  }
 }
