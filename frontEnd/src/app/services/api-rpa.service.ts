@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ApiResponse } from '/home/davi/Documents/frontEnd-PortalRPA/frontEnd/src/app/types/response.interface';
+import { ApiResponse } from '/@src/app/types/response.interface';
 
 @Injectable({
   providedIn: 'root',

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DataService } from '/home/davi/Documents/frontEnd-PortalRPA/frontEnd/src/app/services/api-rpa.service';
-import { ApiResponse } from '/home/davi/Documents/frontEnd-PortalRPA/frontEnd/src/app/types/response.interface';
+import { DataService } from '/@src/app/services/api-rpa.service';
+import { ApiResponse } from '/@src/app/types/response.interface';
 
 @Component({
   selector: 'app-itens',
