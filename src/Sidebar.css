@@ -1,0 +1,44 @@
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar .menu-lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .overlap-group {
+    margin-bottom: 20px;
+}
+
+.sidebar .image {
+    margin-bottom: 20px;
+}
+
+.sidebar .rectangle {
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sidebar .rectangle.clicked {
+    background-color: #3aaa35;
+}
+
+.sidebar .text-wrapper {
+    margin-left: 10px;
+}

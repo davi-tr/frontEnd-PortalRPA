@@ -1,0 +1,61 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "RPA monitoramento",
+    "dateExported": "2024-03-26T23:43:08.532Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d521d6a2-2968-4b74-ac48-bc239ce12c40",
+            "colId": "98911a22-3085-4a29-bb88-31760cde12a4",
+            "containerId": "",
+            "name": "http://localhost:8083/RPA",
+            "url": "http://localhost:8083/RPA",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-03-26T23:42:48.563Z",
+            "modified": "2024-03-26T23:42:48.563Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"RPA11\",\n  \"maquina\": \"SRV207\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "77fe08d6-c5ab-45bd-a7d9-44dcff36e31d",
+            "colId": "98911a22-3085-4a29-bb88-31760cde12a4",
+            "containerId": "",
+            "name": "http://localhost:8083/RPA",
+            "url": "http://localhost:8083/RPA",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-26T23:42:54.525Z",
+            "modified": "2024-03-26T23:42:54.525Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Novo\",\n  \"maquina\": \"SRV207\",\n  \"area\": \"Fiscal\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e0c8fe2-a152-43d7-b7cd-b6133b80b50e",
+            "colId": "98911a22-3085-4a29-bb88-31760cde12a4",
+            "containerId": "",
+            "name": "http://localhost:8083/RPA",
+            "url": "http://localhost:8083/RPA",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-26T23:42:58.727Z",
+            "modified": "2024-03-26T23:42:58.727Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
